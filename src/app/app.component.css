@@ -1,59 +1,50 @@
 .card {
-    width: 400px;
-    margin: 0 auto;
-    border: 1px solid;
-    padding: 10px;
-    text-align: center;
-}
-.details {
-  margin: 10 px;
-  padding: 10px;
-}
-
-.details summary{
-  font-size: 12px;
-}
-
-.buttons {
-  display: block;
-}
-
-.buttons button:focus, 
-.buttons button:hover {
+  max-width: 400px;
+  margin: 12px;
   background-color: pink;
+  text-align: center;
+  padding:6px ;
+  border-radius: 6px;
+}
+/*The heading setting in the card*/
+.card h1{
+  font-size: 36px ;
+  color: #CE1141;
+}
+/*The second heading setting in the card*/
+.card h2{
+  font-size: 30px ;
+  color: #CE1141;
+}
+/*The content setting in the card*/
+.card p{
+  font-size: 16px ;
+  color: black;
+  margin-left: 8px ;
+  margin-right: 8px ;
+}
+/*The image setting in the card*/
+.card img {
+  width: 85%;
+  height:auto;
+}
+/*The button setting in the card*/
+.button1 {
+  margin: 24px auto;
+}
+.button1 button {
+  font-size: 24px;
+  color: #CE1141;
+  background-color: white;
+  padding: 6px;
+}
+.button1 button:hover, .button1 button:focus {
+  color: white;
+  background-color: #CE1141;
 }
 
-.buttons button:active {
-  bakground-color: blue;
-}
-
-.button[data-toggle-btn] {
-  padding: 10px;
-  font-size: 15px;
-  display: block;
-}
-
-@media only screen and (max-width: 1200px){
-  .wrapper {
-    background-color: pink;
-  }
-}
-@media only screen and (max-width: 600px){
-  .wrapper {
-    background-color: purple;
-  }
-}
-@media only screen and (max-width: 425px){
-  .wrapper {
-    font-weight: normal;
-  }
-  .wrapper .header h3 {
-    font-size: 12px;
-  }
-  .wrapper .header h4 {
-    font-size: 10px !important;
-  }
-  details {
+@media screen and (max-width: 800px){
+  .detailsButton{
     display: none;
   }
 }
